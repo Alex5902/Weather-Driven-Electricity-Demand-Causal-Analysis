@@ -156,6 +156,8 @@ This approach is applicable for:
 
 ## Contact
 
-*Author: Alejandro Ito Aramendia*  
+**Alejandro Ito Aramendia**
+
+[My LinkedIn](https://www.linkedin.com/in/alejandro-ito-aramendia-7315511a4/)
 
 ---
