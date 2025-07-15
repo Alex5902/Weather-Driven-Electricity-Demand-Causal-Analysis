@@ -2,7 +2,7 @@
 
 This project investigates how extreme weather events, specifically heatwaves, impact electricity demand in Great Britain. 
 
-It combines **state-of-the-art causal inference** techniques with **real-world weather and demand data** to quantify both statistical effects and business costs.
+It combines **causal inference** techniques with **real-world weather and demand data** to quantify both statistical effects and business costs.
 
 ---
 
@@ -31,7 +31,7 @@ This project uses the following methods and libraries:
 | **Bayesian Structural Time-Series (BSTS)** | Estimate counterfactual demand without the heatwave    |
 | **PCMCI Causal Discovery (Tigramite)**    | Identify lagged dependencies among variables           |
 | **ARIMA and Prophet Baselines**           | Benchmark predictive performance                       |
-| **Python Libraries**: `causalimpact`, `tigramite`, `statsmodels`, `Prophet`, `pandas`, `matplotlib`, `networkx`, `seaborn` | Analysis and visualization |
+| **Python Libraries**: `causalimpact`, `tigramite`, `statsmodels`, `Prophet`, `pandas`, `matplotlib`, `networkx`, `seaborn` | Analysis and visualisation |
 
 ---
 
@@ -49,7 +49,7 @@ This project uses the following methods and libraries:
 ├── 04_causal_discovery_pcmci.ipynb
 │ ├── Identify lagged causal relationships
 │ └── Visualise temporal causal graph
-├── 05_translate_uplift_costs.ipynb
+├── 05_business_impact.ipynb
 │ ├── Estimate financial and CO₂ impacts
 │ └── Summarise findings
 ├── data_processed/
@@ -66,7 +66,7 @@ This project uses the following methods and libraries:
 
 - **Estimated uplift in demand**: +14,000 MWh
 - **95% credible interval**: ~[-12,000, +37,000] MWh
-- **Interpretation**: Although the uplift was **not statistically significant** at $p < 0.05$, the potential impact is meaningful over time.
+- **Interpretation**: Although the uplift was **not statistically significant** at $p < 0.05$, the potential impact is significant over time.
 
 ### Estimated Business Impact
 
@@ -87,9 +87,15 @@ This project uses the following methods and libraries:
 
 ## Visual Highlights
 
-![Observed vs Counterfactual Demand](data_processed/heatwave_costs_chart.png)
+![Estimated Business Impact of July Heatwave](data_processed/heatwave_costs_chart.png)
 
-*Estimated uplift in demand and associated costs.*
+**Figure: Estimated Business Impact of July Heatwave**  
+The July heatwave's uplift corresponds to approximately £840,000 in additional wholesale energy costs and ~294 tons of CO₂ emissions.
+
+![Observed vs Counterfactual Demand During Heatwave](data_processed/heatwave_demand_timeseries.png)
+
+**Figure: Observed vs Counterfactual Demand During Heatwave**  
+The black line shows actual hourly demand. The blue line shows the estimated counterfactual without the heatwave, with the 95% credible interval shaded.
 
 ---
 
@@ -133,7 +139,7 @@ This approach is applicable for:
 - `02_data_cleaning_and_baselines.ipynb`
 - `03_causal_impact_bsts.ipynb`
 - `04_causal_discovery_pcmci.ipynb`
-- `05_translate_uplift_costs.ipynb`
+- `05_business_impact.ipynb`
 
 3. Outputs and saved data will appear in `data_processed/`.
         
@@ -143,7 +149,7 @@ This approach is applicable for:
 
 - **Open-Meteo API** for weather data.
 - **National Grid ESO API** for GB demand.
-- **Jakob Runge & Tigramite** for PCMCI implementation.
+- **Jakob Runge and Tigramite** for PCMCI implementation.
 - **Google CausalImpact** for Bayesian structural time series modeling.
 
 ---
