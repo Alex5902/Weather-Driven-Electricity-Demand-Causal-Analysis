@@ -1,0 +1,3 @@
+Total uplift (MWh): 14000
+Total cost (Åí): 840,009
+Total CO2 emissions (tons): 2940.0
