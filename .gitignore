@@ -1,12 +1,11 @@
 # Ignore Jupyter checkpoints
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # Ignore virtual environment
 venv/
 env/
 
-# Ignore big data files
-*.parquet
-*.csv
-*.png
-*.txt
+# Ignore data outputs (but keep README images)
+data_processed/*.parquet
+data_processed/*.csv
+data_processed/*.txt
