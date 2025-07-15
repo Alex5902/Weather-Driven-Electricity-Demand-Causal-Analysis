@@ -1,0 +1,12 @@
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints
+
+# Ignore virtual environment
+venv/
+env/
+
+# Ignore big data files
+*.parquet
+*.csv
+*.png
+*.txt
